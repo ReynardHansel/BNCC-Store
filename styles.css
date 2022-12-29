@@ -88,11 +88,20 @@ footer {
     background-color: #053F5C;
     color: white;
 }
+footer a{
+    color: white;
+}
 
+.ig-section {
+    display: flex;
+    gap: 5px;
+}
+.ig-logo{
+    width: 1.4em;
+}
 .ig {
     display: flex;
     flex-direction: column;
 }
-.ig a {
-    color: white;
-}
+
+/* next: footer link underline animation */
