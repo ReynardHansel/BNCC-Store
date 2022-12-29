@@ -63,3 +63,11 @@ header img {
     /* border: 1px solid hsl(30, 100%, 50%); */
     box-shadow: 0 0 5px #F7AD19;
 }
+
+.cart {
+    color: white;
+    aspect-ratio: 1/1;
+    /* width: 20%; */
+}
+
+/* next: fix shopping cart */
