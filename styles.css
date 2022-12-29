@@ -32,19 +32,34 @@ header img {
 }
 
 .btn {
-    padding: .9em 1.1em;
+    padding: .7em .9em;
 
     outline: none;
     color: white;
+    font-size: 1rem;
 
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid white;
     box-shadow: 0 0 1.2px hsl(0, 0%, 80%);
     text-shadow: 0 0 .5px hsl(0, 0%, 80%);
+    transition: 200ms;
 }
 
-.signup-btn {
+.login:hover {
+    scale: 95%;
+    box-shadow: 0 0 10px hsl(0, 0%, 80%);
+    text-shadow: 0 0 10px hsl(0, 0%, 80%);
+}
+
+.signup {
     background-color: #F27F0C;
     border: 1px solid #F7AD19;
+}
+
+.signup:hover {
+    scale: 95%;
+    background-color: hsl(33, 100%, 50%);
+    /* border: 1px solid hsl(30, 100%, 50%); */
+    box-shadow: 0 0 5px #F7AD19;
 }
