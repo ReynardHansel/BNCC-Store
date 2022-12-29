@@ -77,3 +77,22 @@ header img {
     aspect-ratio: 1/1;
     width: 2.3em;
 }
+
+
+
+
+
+footer {
+    padding: 3vw;
+
+    background-color: #053F5C;
+    color: white;
+}
+
+.ig {
+    display: flex;
+    flex-direction: column;
+}
+.ig a {
+    color: white;
+}
