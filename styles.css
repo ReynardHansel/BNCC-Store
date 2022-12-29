@@ -92,16 +92,22 @@ footer a{
     color: white;
 }
 
-.ig-section {
+.ftr-section {
     display: flex;
     gap: 5px;
 }
-.ig-logo{
+.ftr-logo{
     width: 1.4em;
 }
 .ig {
     display: flex;
     flex-direction: column;
+    padding-left: 2.1em;
+}
+
+.wa div {
+    margin-top: 4px;
+    padding-left: 2.1em;
 }
 
 /* next: footer link underline animation */
