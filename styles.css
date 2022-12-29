@@ -14,13 +14,13 @@ header {
     /* background-color: #053F5C; */
     background-color: #429EBD;
     /* background-color: #9FE7F5; */
-    padding: 3vh 2vw;
+    padding: 2vh 2vw;
 }
 
 header img {
     aspect-ratio: 3680/1080;
-    width: 30%;
-    /* transform: scale(10%); */
+    /* width: 20%; */
+    transform: scale(70%);
     max-width: 150px;
 }
 
@@ -32,18 +32,20 @@ header img {
 }
 
 .btn {
-    padding: .7em .9em;
+    padding: .5em .7em;
 
     outline: none;
     color: white;
-    font-size: 1rem;
+    font-size: .98rem;
 
     background-color: transparent;
     border-radius: 9px;
     border: 1px solid white;
     box-shadow: 0 0 1.2px hsl(0, 0%, 80%);
     text-shadow: 0 0 .5px hsl(0, 0%, 80%);
+
     transition: 200ms;
+    cursor: pointer;
 }
 
 .login:hover {
