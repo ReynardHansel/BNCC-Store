@@ -39,7 +39,7 @@ header img {
     font-size: 1rem;
 
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 9px;
     border: 1px solid white;
     box-shadow: 0 0 1.2px hsl(0, 0%, 80%);
     text-shadow: 0 0 .5px hsl(0, 0%, 80%);
@@ -47,21 +47,28 @@ header img {
 }
 
 .login:hover {
-    scale: 95%;
     box-shadow: 0 0 10px hsl(0, 0%, 80%);
-    text-shadow: 0 0 10px hsl(0, 0%, 80%);
+    text-shadow: 0 0 3px hsl(0, 0%, 80%);
+}
+
+.login:active {
+    scale: 95%;
 }
 
 .signup {
     background-color: #F27F0C;
-    border: 1px solid #F7AD19;
+    border: 1px solid hsla(40, 93%, 53%, 0.5);
 }
 
 .signup:hover {
-    scale: 95%;
-    background-color: hsl(33, 100%, 50%);
+    background-color: hsla(33, 100%, 50%, .96);
     /* border: 1px solid hsl(30, 100%, 50%); */
-    box-shadow: 0 0 5px #F7AD19;
+    box-shadow: 0 0 2px #F7AD19;
+}
+
+.signup:active{
+    scale: 95%;
+    background-color: #F27F0C;
 }
 
 .cart {
