@@ -1,0 +1,19 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(209, 100%, 30%);
+    padding: 15px 20px;
+}
+
+header img {
+    width: 20%;
+    max-width: 150px;
+}
