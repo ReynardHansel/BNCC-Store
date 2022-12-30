@@ -89,7 +89,14 @@ footer {
     color: white;
 }
 footer a{
+    display: inline-block;
     color: white;
+}
+
+.ftr-txt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
 
 .ftr-section {
@@ -110,4 +117,7 @@ footer a{
     padding-left: 2.1em;
 }
 
+.company {
+    padding-left: 1.2em;
+}
 /* next: footer link underline animation */
