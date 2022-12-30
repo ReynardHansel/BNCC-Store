@@ -76,6 +76,10 @@ header {
 .cart {
     aspect-ratio: 1/1;
     width: 2.3em;
+    transition: 200ms;
+}
+.cart:active {
+    transform: translateX(7px);
 }
 
 
