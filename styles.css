@@ -17,7 +17,7 @@ header {
     padding: 2vh 2vw;
 }
 
-header img {
+.bncc-logo {
     aspect-ratio: 3680/1080;
     /* width: 20%; */
     transform: scale(70%);
@@ -83,20 +83,24 @@ header img {
 
 
 footer {
+    display: flex;
+    justify-content: space-between;
+
     padding: 3vw;
 
     background-color: #053F5C;
     color: white;
 }
 footer a{
-    display: inline-block;
     color: white;
+    width: fit-content;
 }
 
 .ftr-txt {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(183px, 1fr));
     grid-gap: 20px;
+    flex-grow: 2;
 }
 
 .ftr-section {
@@ -120,4 +124,17 @@ footer a{
 .company {
     padding-left: 1.2em;
 }
+
+.ftr-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+}
+.ftr-img img {
+    transform: scale(70%);
+    max-width: 150px;
+}
+
 /* next: footer link underline animation */
