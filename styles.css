@@ -47,6 +47,31 @@ header {
     max-width: 150px;
 }
 
+.search{
+    width: 300px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.search > i {
+    font-size: 10px;
+    color: rgb(82, 82, 82);
+}
+
+.search > input{
+    flex: 1;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
 .login-btn {
     display: flex;
     justify-content: center;
