@@ -144,6 +144,9 @@ header {
 #Rizki .item-img {
     background-image: url("products images/NVIDIA_RTX_4090_Founders_Edition_-_Verpackung_\(ZMASLO\).png");
 }
+#Caca .item-img {
+    background-image: url("products images/paul-esch-laurent-a-L0mmyCqcY-unsplash.jpg");
+}
 
 .item-txt {
     padding: 10%;
