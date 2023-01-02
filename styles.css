@@ -32,7 +32,7 @@ header {
     background-size: 500%;
 
     padding: 2vh 2vw;
-    animation: bg-transition 30s infinite alternate;
+    animation: bg-transition 15s infinite alternate;
 }
 
 @keyframes bg-transition {
@@ -140,6 +140,9 @@ header {
 
 #Reynard .item-img {
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
+}
+#Rizki .item-img {
+    background-image: url("products images/NVIDIA_RTX_4090_Founders_Edition_-_Verpackung_\(ZMASLO\).png");
 }
 
 .item-txt {
