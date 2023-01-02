@@ -132,11 +132,14 @@ header {
     align-items: flex-start;
     justify-content: center;
 
-    background-image: url("products images/Logitech\ wireless\ mouse.jpg");
     background-size: cover;
     background-position: center;
-
+    
     border-radius: 7px 7px 0 0;
+}
+
+#Reynard .item-img {
+    background-image: url("products images/Logitech\ wireless\ mouse.jpg");
 }
 
 .item-txt {
