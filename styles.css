@@ -121,6 +121,9 @@ header {
 
     transition: 80ms ease-out;
 }
+.item-box:hover {
+    box-shadow: 0 0 15px rgba(79, 128, 226, .3);
+}
 .item-box:active {
     scale: 98%;
 }
