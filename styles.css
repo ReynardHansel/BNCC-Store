@@ -142,6 +142,10 @@ header {
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
 }
 
+#Yohanes .item-img {
+    background-image: url("products images/headset\ logitech\ pro\ gaming.jpg");
+}
+
 .item-txt {
     padding: 10%;
     height: 53%;
