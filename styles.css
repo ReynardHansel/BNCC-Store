@@ -50,6 +50,12 @@ header {
     justify-content: center;
 }
 
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
 .hamburger, .hamburger::before, .hamburger::after {
     /* flex-shrink: 3; */
 
@@ -58,6 +64,8 @@ header {
     height: 3px;
     max-width: 2em;
     min-width: 1.5em;
+
+    transition: 500ms;
 }
 .hamburger {position: relative;}
 .hamburger::before {
@@ -69,6 +77,37 @@ header {
     content: '';
     position: absolute;
     top: 9px;
+}
+
+/* Hamburger animation */
+.hamburger-menu.open .hamburger {
+    /* transform: translateX(-10px); */
+    /* scale: 0; */
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    background-color: transparent;
+}
+.hamburger-menu.open .hamburger::before {
+    transform: rotate(48deg);
+    transform-origin: left;
+    /* width: 100%; */
+    /* top: 0; */
+    /* translateX(-10px); */
+    /* scale: 1; */
+    /* display: inline; */
+    /* visibility: visible; */
+    /* opacity: 1; */
+}
+.hamburger-menu.open .hamburger::after {
+    transform: rotate(-48deg);
+    transform-origin: left;
+    /* width: 100%; */
+    /* bottom: 0; */
+    /* scale: 1; */
+    /* display: inline; */
+    /* visibility: visible; */
+    /* opacity: 1; */
 }
 
 .bncc-logo {
