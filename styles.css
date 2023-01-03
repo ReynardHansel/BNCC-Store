@@ -49,6 +49,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* failed attempt */
+    /* padding-left: 24px; */
 }
 
 .hamburger-menu {
@@ -56,12 +59,15 @@ header {
     align-items: center;
     height: 24px;
 
+    /* failed attempt */
+    /* position: fixed;
+    top: 3vh;
+    left: 3vw; */
+
     z-index: 99;
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
-    /* flex-shrink: 3; */
-
     background-color: white;
     border-radius: 30px;
     height: 3px;
@@ -82,7 +88,7 @@ header {
     top: 9px;
 }
 
-/* Hamburger animation */
+/* Failed Hamburger animation attempt*/
 .hamburger-menu.open .hamburger {
     /* transform: translateX(-10px); */
     /* scale: 0; */
