@@ -41,15 +41,45 @@ header {
     100% {background-position: right;}
 }
 
+.header-left {
+    /* background-color: red; */
+    /* width: fit-content; */
+    /* height: fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    /* flex-shrink: 3; */
+
+    background-color: white;
+    border-radius: 30px;
+    height: 3px;
+    max-width: 2em;
+    min-width: 1.5em;
+}
+.hamburger {position: relative;}
+.hamburger::before {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+}
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+}
+
 .bncc-logo {
     aspect-ratio: 3680/1080;
     /* width: 20%; */
     transform: scale(70%);
-    max-width: 150px;
+    max-width: 135px;
 }
-header .bncc-logo {
+/* header .bncc-logo {
     width: 20%;
-}
+} */
 
 .search{
     /* max-width: 50vw; */
@@ -321,6 +351,7 @@ nav {
     background-color: hsl(195, 70%, 50%);
 
     z-index: 2;
+    display: none;
 }
 nav a{
     color: white;
