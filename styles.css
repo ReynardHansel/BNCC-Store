@@ -38,7 +38,7 @@ header {
 
     padding: 2vh 2vw;
     /* width: 100vw; */
-    animation: bg-transition 15s infinite alternate;
+    animation: bg-transition 12s infinite alternate;
 }
 
 @keyframes bg-transition {
