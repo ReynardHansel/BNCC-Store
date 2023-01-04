@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap'); 
 * {
     box-sizing: border-box;
     margin: 0;
@@ -140,6 +140,7 @@ header {
     align-items: center;
     padding: 20px;
     margin-right: 10px;
+    flex-grow: 0.175;
 }
 
 .search > i {
@@ -215,15 +216,30 @@ header {
     transform: translateX(7px);
 }
 .slider{
-    width: 800px;
+    width: 90vw;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin-left:500px;
-    margin-top:50px;
+    margin: 50px auto;
+}
+.first,.second,.third,.fourth{
+    background-position: center;
+    background-size: cover;
+}
+.first{
+    background-image: url("1.jpg"); 
+}
+.second{
+    background-image: url("2.jpg"); 
+}
+.third{
+    background-image: url("3.jpg"); 
+}
+.fourth{
+    background-image: url("4.jpg"); 
 }
   
-  .slides{
+.slides{
     width: 500%;
     height: 500px;
     display: flex;
@@ -233,45 +249,43 @@ header {
     display: none;
   }
   
-  .slide{
+.slide{
     width: 20%;
     transition: 2s;
+    background-size:35%;
   }
-  
-  .slide img{
-    width: 800px;
+.slide img{
+    width: 100%;
     height: 500px;
   }
   
-  /*css for manual slide navigation*/
+/*css for manual slide navigation*/
   
-  .navigation-manual{
-    position: absolute;
+.navigation-manual{
     width: 800px;
-    margin-top: -40px;
+    margin: -40px auto;
     display: flex;
     justify-content: center;
-  }
-  
-  .manual-btn{
+}
+.manual-btn{
     border: 2px solid #40D3DC;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
-  }
+}
   
-  .manual-btn:not(:last-child){
+.manual-btn:not(:last-child){
     margin-right: 40px;
-  }
+}
   
-  .manual-btn:hover{
+.manual-btn:hover{
     background: #40D3DC;
-  }
+}
   
-  #radio1:checked ~ .first{
+ #radio1:checked ~ .first{
     margin-left: 0;
-  }
+ }
   
   #radio2:checked ~ .first{
     margin-left: -20%;
@@ -288,7 +302,6 @@ header {
   /*css for automatic navigation*/
   
   .navigation-auto{
-    position: absolute;
     display: flex;
     width: 800px;
     justify-content: center;
@@ -321,14 +334,65 @@ header {
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #40D3DC;
   }
+#products{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#products .all-items{
+    font-size: 5rem;
+    letter-spacing: 0.2em;
+    animation: tracking-in-contract 2.5s;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15vh;
+}
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 0.2em;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: 0.2em;
+      opacity: 1;
+    }
+  }
+  
 .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-
+    width:100vw;
     padding: 6vw;
+    position: relative;
 }
-
+.items-grid::before{
+ content:'';
+ display:block;
+ position: absolute;
+ width:60vw;
+ height:10px;
+ background-color:#053F5C;
+ left:50%;
+ transform:translate(-50%);
+ top:1vh;
+ border-radius:30px;
+}
 .item-box {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .25);
     border-radius: 7px;
@@ -401,7 +465,6 @@ header {
     font-size: 100%;
     color: #565656;
 }
-
 footer {
     display: flex;
     justify-content: space-between;
