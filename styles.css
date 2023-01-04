@@ -252,7 +252,7 @@ header {
 .slide{
     width: 20%;
     transition: 2s;
-    background-size:35%;
+    /* background-size:95%; */
   }
 .slide img{
     width: 100%;
@@ -340,7 +340,7 @@ header {
     align-items:center;
 }
 #products .all-items{
-    font-size: 5rem;
+    font-size: 4vw;
     letter-spacing: 0.2em;
     animation: tracking-in-contract 2.5s;
     font-family: 'Montserrat', sans-serif;
@@ -600,7 +600,8 @@ nav a:hover::after {
 }
 
 nav .search {
-    display: none;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .sidebar-top{
@@ -663,5 +664,11 @@ nav .search {
     .btn {
         aspect-ratio: 3/1;
         font-size: small;
+    }
+    nav .search {
+        visibility: visible;
+    }
+    header .search {
+        display: none;
     }
 }
