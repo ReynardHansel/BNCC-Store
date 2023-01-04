@@ -9,11 +9,47 @@
     <link href='https://css.gg/search.css' rel='stylesheet'>
 </head>
 
+<!-- failed attempt at fixed hamburger positioning -->
+<!-- <div class="hamburger-menu">
+    <div class="hamburger"></div>
+</div> -->
+
+<nav class="">
+    <div class="sidebar-top">
+        <div class="sidebar-img-back">
+            <svg xmlns="http://www.w3.org/2000/svg" id="sidebar-back" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20 11v2H8l5.5 5.5l-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5L8 11h12Z"/></svg>
+            <img src="BNCC White.png" class="sidebar-logo">
+        </div>
+        <div class="search">
+            <i class="gg-search"></i>
+                <input type="text" name="">
+        </div>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="#">Wishlists</a>
+            <a href="#">Cart</a>
+            <a href="#">History</a>
+            <a href="#contacts">Contact Us</a>
+        </div>
+    </div>
+    <div class="sidebar-exit">
+        <a>Exit / Logout</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M4 12a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-4-4a1 1 0 1 0-1.42 1.42l2.3 2.29H5a1 1 0 0 0-1 1ZM17 2H7a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Z"/></svg>
+    </div>
+</nav>
+
 <body>
     <header> <!--Reynard-->
-        <!-- icon -->
-        <!-- logo -->
-        <img src="BNCC White.png" class="bncc-logo">
+        <div class="header-left">
+            <!-- icon -->
+            <div class="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+            <!-- logo -->
+            <img src="BNCC White.png" class="bncc-logo">
+        </div>
+
 
         <!-- searchbar --> <!--Tania-->
         <div class="search">
@@ -37,7 +73,7 @@
     </section>
 
     <!-- items -->
-    <section>
+    <section id="products">
         <p class="all-items"></p>
         <div class="items-grid">
             <div id="Reynard" class="item-box"> <!--Reynard-->
@@ -101,7 +137,7 @@
             </div>
     </section>
 
-    <footer> <!--Reynard-->
+    <footer id="contacts"> <!--Reynard-->
         <div class="ftr-txt">
             <!--Instagram-->
             <div class="ftr-ig">
@@ -166,5 +202,6 @@
             <img src="BNCC White.png" class="bncc-logo">
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
