@@ -2,6 +2,7 @@
 
 const sideBtn = document.querySelector('.hamburger-menu');
 const sideBack = document.querySelector('#sidebar-back');
+// const sideLink = document.querySelectorAll('.sidebar-links > a')
 
 let btnOpen = false;
 sideBtn.addEventListener('click', () => {
@@ -27,3 +28,12 @@ sideBack.addEventListener('click', () => {
         document.querySelector('nav').classList.remove('open');
     }
 })
+
+// sideLink.addEventListener('click', () => {
+//     if (btnOpen) {
+//         sideBtn.classList.remove('open');
+//         btnOpen = false;
+        
+//         document.querySelector('nav').classList.remove('open');
+//     }
+// })
