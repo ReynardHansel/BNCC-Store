@@ -9,17 +9,54 @@
     <link href='https://css.gg/search.css' rel='stylesheet'>
 </head>
 
+<!-- failed attempt at fixed hamburger positioning -->
+<!-- <div class="hamburger-menu">
+    <div class="hamburger"></div>
+</div> -->
+
+<nav class="">
+    <div class="sidebar-top">
+        <div class="sidebar-img-back">
+            <svg xmlns="http://www.w3.org/2000/svg" id="sidebar-back" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20 11v2H8l5.5 5.5l-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5L8 11h12Z"/></svg>
+            <img src="BNCC White.png" class="sidebar-logo">
+        </div>
+        <div class="search">
+            <i class="gg-search"></i>
+                <input type="text" name="">
+        </div>
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="#">Wishlists</a>
+            <a href="#">Cart</a>
+            <a href="#">History</a>
+            <a href="#contacts">Contact Us</a>
+        </div>
+    </div>
+    <div class="sidebar-exit">
+        <a>Exit / Logout</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M4 12a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-4-4a1 1 0 1 0-1.42 1.42l2.3 2.29H5a1 1 0 0 0-1 1ZM17 2H7a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Z"/></svg>
+    </div>
+</nav>
+
 <body>
     <header> <!--Reynard-->
-        <!-- icon -->
-        <!-- logo -->
-        <img src="BNCC White.png" class="bncc-logo">
+        <div class="header-left">
+            <!-- icon -->
+            <div class="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+            <!-- logo -->
+            <img src="BNCC White.png" class="bncc-logo">
+        </div>
+
 
         <!-- searchbar --> <!--Tania-->
         <div class="search">
             <i class="gg-search"></i>
                 <input type="text" name="">
         </div>
+        
         <!-- login/sign up -->
         <div class="login-btn">
             <button type="button" class="btn login">Log in</button>
@@ -32,12 +69,53 @@
 
     <!--carousel-->
     <section> <!--Rizki-->
-
+         <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <!-- <img src="1.jpg" alt=""> -->
+          </div>
+          <div class="slide second">
+            <!-- <img src="2.jpg" alt=""> -->
+          </div>
+          <div class="slide third">
+            <!-- <img src="3.jpg" alt=""> -->
+          </div>
+          <div class="slide fourth">
+            <!-- <img src="4.jpg" alt=""> -->
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
     </section>
 
     <!-- items -->
-    <section>
-        <p class="all-items"></p>
+    <section id="products">
+        <p class="all-items">ALL PRODUCTS</p>
         <div class="items-grid">
             <div id="Reynard" class="item-box"> <!--Reynard-->
                 <div class="item-img">
@@ -76,7 +154,16 @@
                 </div>
             </div>
             <div id="Arthur" class="item-box"> <!--Arthur-->
-
+                <div class="item-img">
+                    <!-- <img src="products images/Monitor MSI Optix G241VC.png" class="product-img"> -->
+                </div>
+                <div class="item-txt">
+                    <div>
+                        <p>Monitor MSI Optix G241VC 24" Curved 75 Hz</p>
+                        <p>Sisa stok: 10</p>
+                    </div>
+                    <p class="price">Rp 2.075.000,-</p>
+                </div>
             </div>
             <div id="Yohanes" class="item-box"> <!--Yohanes-->
                 <div class="item-img">
@@ -88,10 +175,10 @@
                     </div>
                     <p class="price">Rp 945.000,-</p>
             </div>
-        </div>
+            </div>
     </section>
 
-    <footer> <!--Reynard-->
+    <footer id="contacts"> <!--Reynard-->
         <div class="ftr-txt">
             <!--Instagram-->
             <div class="ftr-ig">
@@ -125,12 +212,16 @@
                         <p>+62 813 2003 6888</p>
                     </div>
                     <div>
+                        <p>Tannia Aurelle</p>
+                        <p>+62 812 8509 2004</p>
+                    </div>
+                    <div>
                         <p>Richard Yohanes</p>
                         <p>+62 895 4220 37460</p>
                     </div>
                     <div>
-                        <p>Tannia Aurelle</p>
-                        <p>+62 812 8509 2004</p>
+                        <p>Richard Arthur</p>
+                        <p>+62 811 2222 3678</p>
                     </div>
                 </div>
             </div>
@@ -152,5 +243,6 @@
             <img src="BNCC White.png" class="bncc-logo">
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
