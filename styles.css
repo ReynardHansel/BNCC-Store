@@ -340,7 +340,7 @@ header {
     align-items:center;
 }
 #products .all-items{
-    font-size: 4vw;
+    font-size: clamp(1.5em, 4vw, 5vw);
     letter-spacing: 0.2em;
     animation: tracking-in-contract 2.5s;
     font-family: 'Montserrat', sans-serif;
