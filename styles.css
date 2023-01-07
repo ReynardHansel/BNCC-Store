@@ -41,13 +41,15 @@ header {
         #3E54D3,
         #4F80E2,
         #15CDCA,
-        #4FE0B6
+        #4FE0B6,
+        #fcc606,
+        #fc6006
     );
     background-size: 500%;
 
     padding: 2vh 2vw;
     width: 100vw;
-    animation: bg-transition 12s infinite alternate;
+    animation: bg-transition 10s infinite alternate;
 }
 
 @keyframes bg-transition {
