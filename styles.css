@@ -545,6 +545,9 @@ header {
 
     transition: 80ms ease-out;
 }
+.item-box.featured:hover {
+    box-shadow: 0 0 15px hsla(33, 100%, 50%, .96);
+}
 .item-box:hover {
     box-shadow: 0 0 15px rgba(79, 128, 226, .3);
 }
@@ -566,7 +569,13 @@ header {
 }
 
 
-#Reynard .item-img {
+/* .Reynard .item-img:nth-of-type(1) {
+    background-image: url("products images/Logitech\ wireless\ mouse.jpg");
+} */
+.items-grid .Reynard:nth-of-type(1) .item-img{
+    background-image: url("products images/Microsoft\ surface\ 5.jpg");
+}
+.items-grid .Reynard:nth-of-type(2) .item-img{
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
 }
 #Rizki .item-img {
