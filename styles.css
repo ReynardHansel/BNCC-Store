@@ -422,6 +422,102 @@ header {
     }
   }
   
+.all-items.featured {
+    position: relative;
+    margin-bottom: 6vh;
+}
+.all-items.featured::after {
+    content:'';
+    display:block;
+    position: absolute;
+    width:60vw;
+    height:10px;
+    background-color:#053F5C;
+    left:50%;
+    transform:translate(-50%);
+    bottom: -3vh;
+    border-radius:30px;
+}
+.featured-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    max-width: 800px;
+    min-height: fit-content;
+    aspect-ratio: 4/1;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .25);
+
+    transition: 200ms;
+}
+.featured-box:hover {
+    box-shadow:0 0 15px #F27F0C;
+}
+.featured-box:active{
+    scale: 98%;
+}
+.featured-box .item-img {
+    background-image: url("products images/Microsoft\ surface\ 5.jpg");
+    height: 100%;
+    width: 35%;
+    border-radius: 7px 0 0 7px;
+}
+.featured-txt {
+    height: 100%;
+    width: 65%;
+
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.featured-txt > div:not(.pricing) > p:nth-of-type(1) {
+    /* font-size: 1.1rem; */
+    font-size: 120%;
+    font-weight: 900;
+}
+.featured-txt > div:not(.pricing) > p:nth-of-type(2) {
+    margin-top: .8em;
+    margin-bottom: 1.6em;
+    /* font-size: .9rem; */
+    font-size: 91%;
+    font-weight: lighter;
+    color: #515151;
+}
+.pricing {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    text-align: end;
+    font-weight: bolder;
+    font-size: 110%;
+    color: #565656;
+}
+.pricing p:nth-of-type(1){
+    position: relative;
+}
+.pricing p:nth-of-type(1)::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-11deg);
+    transform-origin: left;
+}
+.pricing p:nth-of-type(2){
+    color:hsla(33, 100%, 50%, .96);
+    font-size: 120%;
+}
+
 .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -449,6 +545,9 @@ header {
 
     transition: 80ms ease-out;
 }
+.item-box.featured:hover {
+    box-shadow: 0 0 15px hsla(33, 100%, 50%, .96);
+}
 .item-box:hover {
     box-shadow: 0 0 15px rgba(79, 128, 226, .3);
 }
@@ -459,9 +558,9 @@ header {
 .item-img {
     height: 47%;
 
-    display: flex;
+    /* display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: center; */
 
     background-size: cover;
     background-position: center;
@@ -470,7 +569,13 @@ header {
 }
 
 
-#Reynard .item-img {
+/* .Reynard .item-img:nth-of-type(1) {
+    background-image: url("products images/Logitech\ wireless\ mouse.jpg");
+} */
+.items-grid .Reynard:nth-of-type(1) .item-img{
+    background-image: url("products images/Microsoft\ surface\ 5.jpg");
+}
+.items-grid .Reynard:nth-of-type(2) .item-img{
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
 }
 #Rizki .item-img {
@@ -719,5 +824,9 @@ nav .search {
     }
     header .search {
         display: none;
+    }
+    .pricing {
+        flex-direction: column;
+        align-items: end;
     }
 }
