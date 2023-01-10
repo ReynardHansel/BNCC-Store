@@ -584,11 +584,12 @@ header {
 #Caca .item-img {
     background-image: url("products images/paul-esch-laurent-a-L0mmyCqcY-unsplash.jpg");
 }
-
-#Arthur .item-img{
+.items-grid.Arthur:nth-of-type(1) .item-img{
     background-image: url("products images/Monitor\ MSI\ Optix\ G241VC.png");
 }
-
+.items-grid .Arthur:nth-of-type(2) .item-img{
+    background-image: url("products images/Corsair\ MM700\ RGB.jpg");
+}
 #Yohanes .item-img {
     background-image: url("products images/headset\ logitech\ pro\ gaming.jpg");
 }

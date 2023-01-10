@@ -67,3 +67,22 @@ function searchEvent(e){
         }
     })
 }     
+
+const loginButton = document.getElementsByClassName("btn login");
+const signupButton = document.getElementsByClassName("btn signup");
+const cartButton = document.getElementsByClassName("cart");
+
+loginButton[0].addEventListener('click',() => {
+    // console.log("Login Clicked");
+    alert("Feature Coming Soon");
+});
+
+signupButton[0].addEventListener('click',() => {
+    // console.log("Sign Up Clicked");
+    alert("Feature Coming Soon");
+});
+
+cartButton[0].addEventListener('click',() => {
+    // console.log("Cart Clicked");
+    alert("Feature Coming Soon");
+});
