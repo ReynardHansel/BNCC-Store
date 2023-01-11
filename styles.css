@@ -442,7 +442,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80vw;
+    width: 90vw;
     max-width: 1000px;
     min-height: fit-content;
     aspect-ratio: 4/1;
