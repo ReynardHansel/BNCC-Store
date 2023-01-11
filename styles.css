@@ -876,4 +876,7 @@ nav .search {
         flex-direction: column;
         align-items: end;
     }
+    .product-showcase p{
+        font-size: 1.6rem;
+    }
 }
