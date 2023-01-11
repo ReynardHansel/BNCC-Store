@@ -830,9 +830,6 @@ nav .search {
     position: relative;
     left: 1em;
 }
-
-
-
 @media (max-width: 640px){
     .btn {
         aspect-ratio: 3/1;
