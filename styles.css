@@ -458,9 +458,11 @@ header {
     scale: 98%;
 }
 .featured-box .item-img {
-    background-image: url("products images/Microsoft\ surface\ 5.jpg");
+    /* background-image: url("products images/Microsoft\ surface\ 5.jpg"); */
     height: 100%;
     width: 35%;
+}
+.featured-box .item-img img {
     border-radius: 7px 0 0 7px;
 }
 .featured-txt {
@@ -558,13 +560,15 @@ header {
 .item-img {
     height: 47%;
 
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: center; */
-
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
     
+    border-radius: 7px 7px 0 0;
+}
+.item-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     border-radius: 7px 7px 0 0;
 }
 
@@ -572,26 +576,27 @@ header {
 /* .Reynard .item-img:nth-of-type(1) {
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
 } */
-.items-grid .Reynard:nth-of-type(1) .item-img{
+/* .items-grid .Reynard:nth-of-type(1) .item-img{
     background-image: url("products images/Microsoft\ surface\ 5.jpg");
 }
 .items-grid .Reynard:nth-of-type(2) .item-img{
     background-image: url("products images/Logitech\ wireless\ mouse.jpg");
-}
-#Rizki .item-img {
+} */
+/* #Rizki .item-img {
     background-image: url("products images/NVIDIA_RTX_4090_Founders_Edition_-_Verpackung_\(ZMASLO\).png");
 }
 #Caca .item-img {
     background-image: url("products images/paul-esch-laurent-a-L0mmyCqcY-unsplash.jpg");
 }
-
-#Arthur .item-img{
+.items-grid .Arthur:nth-of-type(1) .item-img{
     background-image: url("products images/Monitor\ MSI\ Optix\ G241VC.png");
 }
-
+.items-grid .Arthur:nth-of-type(2) .item-img{
+    background-image: url("products images/Corsair\ MM700\ RGB.jpg");
+}
 #Yohanes .item-img {
     background-image: url("products images/headset\ logitech\ pro\ gaming.jpg");
-}
+} */
 
 .item-txt {
     padding: 10%;
