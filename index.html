@@ -6,79 +6,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BNCC | Store</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://css.gg/search.css' rel='stylesheet'>
 </head>
 
-<body>
-    <header> <!--Reynard-->
-        <!-- icon -->
-        <!-- logo -->
-        <img src="BNCC White.png" class="bncc-logo">
+<!-- failed attempt at fixed hamburger positioning -->
+<!-- <div class="hamburger-menu">
+    <div class="hamburger"></div>
+</div> -->
 
-        <!-- searchbar --> <!--Tania-->
-        <!-- login/sign up -->
-        <div class="login-btn">
-            <button type="button" class="btn login">Log in</button>
-            <button type="button" class="btn signup">Sign up</button>
-            
-        <!-- cart -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="cart" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M7 22q-.825 0-1.412-.587Q5 20.825 5 20q0-.825.588-1.413Q6.175 18 7 18t1.412.587Q9 19.175 9 20q0 .825-.588 1.413Q7.825 22 7 22Zm10 0q-.825 0-1.412-.587Q15 20.825 15 20q0-.825.588-1.413Q16.175 18 17 18t1.413.587Q19 19.175 19 20q0 .825-.587 1.413Q17.825 22 17 22ZM6.15 6l2.4 5h7l2.75-5ZM5.2 4h14.75q.575 0 .875.512q.3.513.025 1.038l-3.55 6.4q-.275.5-.738.775Q16.1 13 15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.988q-.575-.987-.05-1.962L6.6 11.6L3 4H1V2h3.25Zm3.35 7h7Z"/></svg>
+<nav class="">
+    <div class="sidebar-top">
+        <div class="sidebar-img-back">
+            <svg xmlns="http://www.w3.org/2000/svg" id="sidebar-back" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20 11v2H8l5.5 5.5l-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5L8 11h12Z"/></svg>
+            <img src="BNCC White.png" class="sidebar-logo">
         </div>
-    </header>
 
-    <!--carousel-->
-    <section> <!--Rizki-->
+        <div class="search">
+            <i class="gg-search"></i>
+            <input type="text" id="nav-input" placeholder="search items...">
+        </div>
 
+        <div class="sidebar-links">
+            <a href="index.html">Home</a>
+            <a href="#products">Products</a>
+            <a href="#">Wishlists</a>
+            <a href="#">Cart</a>
+            <a href="#">History</a>
+            <a href="#contacts">Contact Us</a>
+        </div>
+    </div>
+    <div class="sidebar-exit">
+        <a href="https://www.google.com">Exit / Logout</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M4 12a1 1 0 0 0 1 1h7.59l-2.3 2.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76a1 1 0 0 0-.21-.33l-4-4a1 1 0 1 0-1.42 1.42l2.3 2.29H5a1 1 0 0 0-1 1ZM17 2H7a3 3 0 0 0-3 3v3a1 1 0 0 0 2 0V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-3a1 1 0 0 0-2 0v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Z"/></svg>
+    </div>
+</nav>
+
+<body>
+    <div class="header-transition">
+        <header> <!--Reynard-->
+            <div class="header-left">
+                <!-- icon -->
+                <div class="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+                <!-- logo -->
+                <img src="BNCC White.png" class="bncc-logo">
+            </div>
+    
+    
+           <!-- searchbar --> <!--Tannia-->
+           <div class="search">
+            <i class="gg-search"></i>
+            <input type="text" id="header-input" placeholder="search items...">
+            </div>
+        
+            <!-- login/sign up -->
+            <div class="login-btn">
+                <button type="button" class="btn login">Log in</button>
+                <button type="button" class="btn signup">Sign up</button>
+                
+            <!-- cart -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="cart" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M7 22q-.825 0-1.412-.587Q5 20.825 5 20q0-.825.588-1.413Q6.175 18 7 18t1.412.587Q9 19.175 9 20q0 .825-.588 1.413Q7.825 22 7 22Zm10 0q-.825 0-1.412-.587Q15 20.825 15 20q0-.825.588-1.413Q16.175 18 17 18t1.413.587Q19 19.175 19 20q0 .825-.587 1.413Q17.825 22 17 22ZM6.15 6l2.4 5h7l2.75-5ZM5.2 4h14.75q.575 0 .875.512q.3.513.025 1.038l-3.55 6.4q-.275.5-.738.775Q16.1 13 15.55 13H8.1L7 15h12v2H7q-1.125 0-1.7-.988q-.575-.987-.05-1.962L6.6 11.6L3 4H1V2h3.25Zm3.35 7h7Z"/></svg>
+            </div>
+        </header>
+    </div>
+
+    <!-- product showcase -->
+    <section class="product-showcase">
+        <p>Text Here</p>
+        <video autoplay muted loop playsinline>
+            <source src="products images/Microsoft surface 5.mp4" type="video/mp4">
+            <!-- <source src="products images/Laptop commercial.mp4" type="video/mp4"> -->
+        </video>
     </section>
 
-    <!-- items -->
-    <section>
-        <p class="all-items"></p>
-        <div class="items-grid">
-            <div id="Reynard" class="item-box"> <!--Reynard-->
+    <section class="main-store">
+        <!--carousel-->
+        <section> <!--Rizki-->
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <!-- <img src="1.jpg" alt=""> -->
+              </div>
+              <div class="slide second">
+                <!-- <img src="2.jpg" alt=""> -->
+              </div>
+              <div class="slide third">
+                <!-- <img src="3.jpg" alt=""> -->
+              </div>
+              <div class="slide fourth">
+                <!-- <img src="4.jpg" alt=""> -->
+              </div>
+              <!--slide images end-->
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+        </section>
+    
+        <!-- items -->
+        <section id="products">
+            <!-- featured -->
+            <p class="all-items featured">Featured Product</p>
+            <div class="featured-box featured">
                 <div class="item-img">
-                    <!-- <img src="products images/SanDisk 256GB.jpg" class="product-img"> -->
+                    <img src="products images/Microsoft surface 5.jpg" alt="Microsoft surface 5">
+
                 </div>
-                <div class="item-txt">
+                <div class="featured-txt">
                     <div>
-                        <p>Logitech wireless mouse</p>
+                        <p>Microsoft Surface 5</p>
                         <p>Sisa stok: 1</p>
                     </div>
-                    <p class="price">Rp 889.000,-</p>
-                </div>
-            </div>
-            <div id="Rizki" class="item-box"> <!--Rizki-->
-                <div class="item-img">
-                    <!-- <img src="products images/SanDisk 256GB.jpg" class="product-img"> -->
-                </div>
-                <div class="item-txt">
-                    <div>
-                        <p>NVIDIA RTX 4090 Founders Edition - Verpackung</p>
-                        <p>Sisa stok: 999</p>
+                    <div class="pricing">
+                        <p class="discount">Rp 22.850.000,-</p>
+                        <p class="price">Rp 20.199.000,-</p>
                     </div>
-                    <p class="price">Rp 40.000.000,-</p>
                 </div>
             </div>
-            </div>
-            <div id="Caca" class="item-box"> <!--Caca-->
-                <div class="item-img"> </div>
-                <div class="item-txt">
-                    <div>
-                        <p>Keyboard Jovitech Gaming</p>
-                        <p>Sisa stok: 5</p>
+            <!-- featured -->
+
+            <p class="all-items">ALL PRODUCTS</p>
+            <div class="items-grid">
+                <div class="Reynard item-box featured"> <!--Reynard-->
+                    <div class="item-img">
+                        <img src="products images/Microsoft surface 5.jpg" alt="Microsoft surface 5">
                     </div>
-                    <p class="price">Rp 556.000,-</p>
+                    <div class="item-txt">
+                        <div>
+                            <p>Microsoft Surface 5</p>
+                            <p>Sisa stok: 1</p>
+                        </div>
+                        <p class="price" style="color: hsla(33, 100%, 50%, .96);">Rp 20.199.000,-</p>
+                    </div>
                 </div>
-            </div>
-            <div id="Arthur" class="item-box"> <!--Arthur-->
-
-            </div>
-            <div id="Yohanes" class="item-box"> <!--Yohanes-->
-
-            </div>
-        </div>
+                <div class="Reynard item-box"> <!--Reynard-->
+                    <div class="item-img">
+                        <img src="products images/Logitech wireless mouse.jpg" alt="Logitech wireless mouse">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Logitech wireless mouse</p>
+                            <p style="color: red;">Sisa stok: 0</p>
+                        </div>
+                        <p class="price">Rp 889.000,-</p>
+                    </div>
+                </div>
+                <div id="Rizki" class="item-box"> <!--Rizki-->
+                    <div class="item-img">
+                        <img src="products images/NVIDIA_RTX_4090_Founders_Edition_-_Verpackung_(ZMASLO).png" alt="NVIDIA RTX 4090 Founders Edition">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>NVIDIA RTX 4090 Founders Edition - Verpackung</p>
+                            <p>Sisa stok: 999</p>
+                        </div>
+                        <p class="price">Rp 40.000.000,-</p>
+                    </div>
+                </div>
+                <div id="Caca" class="item-box"> <!--Caca-->
+                    <div class="item-img">
+                        <img src="products images/paul-esch-laurent-a-L0mmyCqcY-unsplash.jpg" alt="Keyboard Jovitech Gaming">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Keyboard Jovitech gaming</p>
+                            <p>Sisa stok: 5</p>
+                        </div>
+                        <p class="price">Rp 556.000,-</p>
+                    </div>
+                </div>
+                <div id="Caca" class="item-box"> <!--Caca-->
+                    <div class="item-img">
+                        <img src="products images/FM64FD65B_97-IMS-id_ID.webp" alt="USB Philips 3.0">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>USB Philips 3.0</p>
+                            <p>Sisa stok: 3</p>
+                        </div>
+                        <p class="price">Rp 130.000,-</p>
+                    </div>
+                </div>
+                <div id="Caca" class="item-box"> <!--Caca-->
+                    <div class="item-img">
+                        <img src="products images/DLP8718PC_00-IMS-en_ID.webp" alt="Philips Powerbank DLP8718PC/00">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Philips Powerbank DLP8718PC/00</p>
+                            <p>Sisa stok: 11</p>
+                        </div>
+                        <p class="price">Rp 160.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/Monitor MSI Optix G241VC.png" alt="Monitor MSI Optix G241">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Monitor MSI Optix G241VC 24" Curved 75 Hz</p>
+                            <p>Sisa stok: 10</p>
+                        </div>
+                        <p class="price">Rp 2.075.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/Corsair MM700 RGB.png" alt="Corsair MM700 RGB">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Corsair MM700 RGB Extended</p>
+                            <p>Sisa stok: 21</p>
+                        </div>
+                        <p class="price">Rp 849.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/GM500.png" alt="dbE GM 500">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Headset dbE GM500</p>
+                            <p>Sisa stok: 43</p>
+                        </div>
+                        <p class="price">Rp 600.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/Charger Samsung.jpg" alt="Charger Samsung">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Charger Samsung Fast Charging</p>
+                            <p>Sisa stok: 59</p>
+                        </div>
+                        <p class="price">Rp 82.750,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/Corsair power supply.jpg" alt="Corsair VS450">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Corsair Power Supply VS450W-80plus</p>
+                            <p>Sisa stok: 9</p>
+                        </div>
+                        <p class="price">Rp 560.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/macbook.png" alt="Macbook PRO 2022">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Apple Macbook PRO 2022 M2</p>
+                            <p>Sisa stok: 3</p>
+                        </div>
+                        <p class="price">Rp 23.450.000,-</p>
+                    </div>
+                </div>
+                <div class="Arthur item-box"> <!--Arthur-->
+                    <div class="item-img">
+                        <img src="products images/Razer Mic.png" alt="Seiren Mini Microphone">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Razer Seiren Mini Ultra Compact Microphone</p>
+                            <p>Sisa stok: 71</p>
+                        </div>
+                        <p class="price">Rp 814.500,-</p>
+                    </div>
+                </div>
+                <div id="Yohanes" class="item-box"> <!--Yohanes-->
+                    <div class="item-img">
+                        <img src="products images/headset logitech pro gaming.jpg" alt="Logitech Headset Pro Gaming">
+                    </div>
+                    <div class="item-txt">
+                        <div>
+                            <p>Logitech Headset Pro Gaming</p>
+                            <p>Sisa stok: 1</p>
+                        </div>
+                        <p class="price">Rp 945.000,-</p>
+                </div>
+                </div>
+        </section>
     </section>
 
-    <footer> <!--Reynard-->
+    <footer id="contacts"> <!--Reynard-->
         <div class="ftr-txt">
             <!--Instagram-->
             <div class="ftr-ig">
@@ -92,6 +336,7 @@
                     <a href="https://www.instagram.com/callista_althea/" target="_blank">@callista_althea</a>
                     <a href="https://www.instagram.com/richardarthur_/" target="_blank">@richardarthur_</a>
                     <a href="https://www.instagram.com/reynardhansel/" target="_blank">@reynardhansel</a>
+                    <a href="https://www.instagram.com/richard_yohaes/" target="_blank">@richard_yohaes</a>
                 </div>
             </div>
 
@@ -109,6 +354,22 @@
                     <div>
                         <p>Reynard Hansel</p>
                         <p>+62 813 2003 6888</p>
+                    </div>
+                    <div>
+                        <p>Tannia Aurelle</p>
+                        <p>+62 812 8509 2004</p>
+                    </div>
+                    <div>
+                        <p>Richard Yohanes</p>
+                        <p>+62 895 4220 37460</p>
+                    </div>
+                    <div>
+                        <p>Richard Arthur</p>
+                        <p>+62 811 2222 3678</p>
+                    </div>
+                    <div>
+                        <p>Callista Althea</p>
+                        <p>+62 878 0888 1223</p>
                     </div>
                 </div>
             </div>
@@ -130,5 +391,6 @@
             <img src="BNCC White.png" class="bncc-logo">
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
