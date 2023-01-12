@@ -253,11 +253,11 @@ header {
     min-height: 100%;
 }
 .product-showcase p{
-font-size: 4rem;
-animation: blur-out-expand 5s;
-animation-direction :reverse ;
-letter-spacing: 0.7rem;
-font-weight: 500;
+    font-size: clamp(.1rem, 5vw, 3rem);
+    animation: blur-out-expand 5s;
+    animation-direction :reverse ;
+    letter-spacing: 0.7rem;
+    font-weight: 500;
 }
 @-webkit-keyframes blur-out-expand {
     0% {
@@ -878,5 +878,6 @@ nav .search {
     }
     .product-showcase p{
         font-size: 1.6rem;
+        letter-spacing: .2rem;
     }
 }
